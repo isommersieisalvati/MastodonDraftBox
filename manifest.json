@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Social Media Draft Saver",
+  "version": "1.0",
+  "permissions": ["storage", "scripting"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
